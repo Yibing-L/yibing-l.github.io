@@ -22,7 +22,7 @@ GitHub’s official instructions: https://docs.github.com/en/pages/getting-start
 ## Edit content
 
 - Home and biography: `index.html`.
-- Case studies: `projects/homeplus/index.html`, `projects/wayfind/index.html`, `projects/long-term-design/index.html`.
+- Main research: `projects/homeplus/index.html` combines the robotics system and Seventeen Years in the Making. WayFind is a supporting project at `projects/wayfind/index.html`. The previous retrospective URL redirects into HomePlus.
 - Research outputs and citation text: `publications/index.html`; downloadable references: `assets/research-outputs.bib`.
 - CV: replace `assets/Yibing_Lu_CV.pdf` while keeping the filename.
 - Photos and video: `assets/homeplus/`; gallery: `gallery/index.html`; demonstration: `demos/index.html`. Original supplied media remain unchanged outside this site.
