@@ -133,6 +133,122 @@
   .academic-home .footer-email{font-size:28px}
 }
 
+/* Publications uses a compact academic heading and a simple citation list. */
+.publications-page .wrap,
+.publications-page .site-header {
+  max-width: 1120px;
+}
+.publications-page .page-intro {
+  padding-block: 45px 28px;
+}
+.publications-page .page-intro h1 {
+  max-width: none;
+  color: var(--ink);
+  font: 400 39px / 1.2 var(--serif);
+  letter-spacing: -.025em;
+}
+.publications-page .publication-list {
+  padding-bottom: 65px;
+}
+.publications-page .publication-entry {
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 32px;
+  padding-block: 26px 30px;
+}
+.publications-page .publication-entry > div {
+  min-width: 0;
+}
+.publications-page .publication-entry h2 {
+  font: 400 25px / 1.35 var(--serif);
+  letter-spacing: -.02em;
+  overflow-wrap: break-word;
+}
+.publications-page .publication-side {
+  gap: 13px;
+}
+.publications-page .publication-side .output-year {
+  font-size: 20px;
+  line-height: 1.4;
+}
+.publications-page .publication-side .pill {
+  max-width: 100%;
+  background: transparent;
+  border-color: var(--line);
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+  padding: 4px 8px;
+}
+.publications-page .publication-entry .authors {
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.publications-page .publication-entry .venue {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.75;
+}
+.publications-page .publication-entry p:not(.authors):not(.venue):not(.availability) {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.publications-page .publication-entry .output-actions {
+  gap: 14px 25px;
+  margin-top: 19px;
+}
+.publications-page .publication-entry .availability {
+  margin-top: 12px;
+  line-height: 1.8;
+}
+.publications-page .citation-download {
+  padding-top: 23px;
+  gap: 15px 23px;
+}
+.publications-page .copy-status {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 600px) {
+  .publications-page .page-intro {
+    padding-block: 34px 24px;
+  }
+  .publications-page .page-intro h1 {
+    font-size: 31px;
+  }
+  .publications-page .publication-list {
+    padding-bottom: 48px;
+  }
+  .publications-page .publication-entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 17px;
+    padding-block: 23px 27px;
+  }
+  .publications-page .publication-side {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+  }
+  .publications-page .publication-side .output-year {
+    align-self: center;
+    flex-shrink: 0;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .publications-page .publication-entry h2 {
+    font-size: 23px;
+    line-height: 1.4;
+  }
+  .publications-page .publication-entry .authors {
+    margin-top: 12px;
+    font-size: 13px;
+  }
+  .publications-page .citation-download {
+    padding-top: 21px;
+  }
+}
+
 /* Keep the existing image-and-text flow within the HomePlus grouping. */
 .homeplus-group-heading{margin-bottom:29px}
 .homeplus-group-heading h3{

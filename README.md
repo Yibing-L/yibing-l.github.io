@@ -25,7 +25,7 @@ GitHub’s official instructions: https://docs.github.com/en/pages/getting-start
 - Case studies: `projects/homeplus/index.html`, `projects/wayfind/index.html`, `projects/long-term-design/index.html`.
 - Research outputs and citation text: `publications/index.html`; downloadable references: `assets/research-outputs.bib`.
 - Interactive CV: `cv/index.html`, `assets/cv.css`, and `assets/cv.js`. Word and PDF downloads: `assets/Yibing_Lu_CV.docx` and `assets/Yibing_Lu_CV.pdf`.
-- Photos and video: `assets/homeplus/`; gallery: `gallery/index.html`; demonstration: `demos/index.html`. Original supplied media remain unchanged outside this site.
+- Project media: `assets/homeplus/`; video, interactive demonstration, and photographs are in `projects/homeplus/index.html` at `#video`, `#system-demo`, and `#photos`. The previous demo and gallery URLs redirect to the project. Original supplied media remain unchanged outside this site.
 - Appearance: `assets/style.css`; navigation, filtering, citation copy, photo dialog: `assets/main.js`.
 - Interactive conceptual demos: `assets/demos.js`.
 

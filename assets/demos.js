@@ -56,13 +56,19 @@
       else this.renderHomeplus();
     }
 
+    appendMarkup(markup) {
+      const template = document.createElement('template');
+      template.innerHTML = markup;
+      this.shadowRoot.append(template.content.cloneNode(true));
+    }
+
     renderHomeplus() {
       const nodes = stages.map((stage,i) => {
         const x=26+i*115;
         return `<g><rect class="node" data-node="${i}" x="${x}" y="50" width="96" height="74" rx="3"/><text class="node-text" data-node-text="${i}" x="${x+48}" y="79" text-anchor="middle" aria-hidden="true" style="font-size:22px">${stage.symbol}</text><text class="node-text" data-node-text="${i}" x="${x+48}" y="105" text-anchor="middle">${stage.name}</text></g>`;
       }).join('');
       const lines=stages.slice(1).map((_,i)=>`<path class="pipe-line" data-link="${i}" d="M${122+i*115} 87h19m-5-4 5 4-5 4"/>`).join('');
-      this.shadowRoot.insertAdjacentHTML('beforeend', `<section class="demo" aria-labelledby="demo-title">
+      this.appendMarkup(`<section class="demo" aria-labelledby="demo-title">
         <div class="head"><p class="eyebrow">Interactive explainer · Illustrative</p><h3 id="demo-title">From intention to action.</h3><p>Select a stage to explore a conceptual home+ manipulation pipeline.</p></div>
         <div class="controls" role="group" aria-label="Pipeline stages">${stages.map((stage,i)=>`<button type="button" data-stage="${i}" aria-pressed="${i===0}"><span class="num" aria-hidden="true">0${i+1}</span>${stage.name}</button>`).join('')}</div>
         <div class="visual"><svg viewBox="0 0 610 185" role="img" aria-labelledby="pipeline-title pipeline-description"><title id="pipeline-title">Conceptual home+ manipulation pipeline</title><desc id="pipeline-description">Five connected stages: gesture, perception, planning, execution, and feedback. Feedback informs a later planning cycle.</desc>${lines}${nodes}<path class="pipe-line" d="M534 128v24H304v-20m-4 5 4-5 4 5"/><text x="419" y="173" text-anchor="middle" fill="#5d695f" font-size="10">observe · update · replan</text></svg></div>
@@ -82,7 +88,7 @@
     }
 
     renderWayfind() {
-      this.shadowRoot.insertAdjacentHTML('beforeend', `<section class="demo" aria-labelledby="demo-title">
+      this.appendMarkup(`<section class="demo" aria-labelledby="demo-title">
         <div class="head"><p class="eyebrow">Interactive explainer · Synthetic data</p><h3 id="demo-title">A route tells a story.</h3><p>Compare two invented journeys through the same floor plan, then scrub through each route.</p></div>
         <div class="controls" role="group" aria-label="Synthetic route presets">${routes.map((route,i)=>`<button type="button" data-route="${i}" aria-pressed="${i===0}">${route.label}</button>`).join('')}</div>
         <div class="visual"><svg viewBox="0 0 600 360" role="img" aria-labelledby="map-title map-description"><title id="map-title">Synthetic wayfinding floor plan</title><desc id="map-description">An invented floor plan with an entrance at lower left, a studio at upper right, and a meeting room along the route. The orange line is a synthetic walking route; the dotted gray line is a straight-line reference.</desc>
