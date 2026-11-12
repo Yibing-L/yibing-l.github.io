@@ -35,6 +35,6 @@ The CV was exported from the revised November 11, 2026 Word CV. Review its conta
 
 ## Image credit
 
-Home+ photographs and the cup-pickup demonstration were supplied by Yibing Lu. Photographs illustrate prototype setups and intended interactions, rather than user-study sessions. The demonstration is a single recorded prototype run.
+home+ photographs and the cup-pickup demonstration were supplied by Yibing Lu. Photographs illustrate prototype setups and intended interactions, rather than user-study sessions. The demonstration is a single recorded prototype run.
 
 The retrospective figures are reproduced from the submitted manuscript, with original annotations/source markers retained. The author-supplied swimlane is also available. WayFind floor plans and landmark images come from the supplied project archive; no raw participant data are included. Paper-style layouts use `assets/paper.css`.

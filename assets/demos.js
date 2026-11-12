@@ -63,9 +63,9 @@
       }).join('');
       const lines=stages.slice(1).map((_,i)=>`<path class="pipe-line" data-link="${i}" d="M${122+i*115} 87h19m-5-4 5 4-5 4"/>`).join('');
       this.shadowRoot.insertAdjacentHTML('beforeend', `<section class="demo" aria-labelledby="demo-title">
-        <div class="head"><p class="eyebrow">Interactive explainer · Illustrative</p><h3 id="demo-title">From intention to action.</h3><p>Select a stage to explore a conceptual Home+ manipulation pipeline.</p></div>
+        <div class="head"><p class="eyebrow">Interactive explainer · Illustrative</p><h3 id="demo-title">From intention to action.</h3><p>Select a stage to explore a conceptual home+ manipulation pipeline.</p></div>
         <div class="controls" role="group" aria-label="Pipeline stages">${stages.map((stage,i)=>`<button type="button" data-stage="${i}" aria-pressed="${i===0}"><span class="num" aria-hidden="true">0${i+1}</span>${stage.name}</button>`).join('')}</div>
-        <div class="visual"><svg viewBox="0 0 610 185" role="img" aria-labelledby="pipeline-title pipeline-description"><title id="pipeline-title">Conceptual Home+ manipulation pipeline</title><desc id="pipeline-description">Five connected stages: gesture, perception, planning, execution, and feedback. Feedback informs a later planning cycle.</desc>${lines}${nodes}<path class="pipe-line" d="M534 128v24H304v-20m-4 5 4-5 4 5"/><text x="419" y="173" text-anchor="middle" fill="#5d695f" font-size="10">observe · update · replan</text></svg></div>
+        <div class="visual"><svg viewBox="0 0 610 185" role="img" aria-labelledby="pipeline-title pipeline-description"><title id="pipeline-title">Conceptual home+ manipulation pipeline</title><desc id="pipeline-description">Five connected stages: gesture, perception, planning, execution, and feedback. Feedback informs a later planning cycle.</desc>${lines}${nodes}<path class="pipe-line" d="M534 128v24H304v-20m-4 5 4-5 4 5"/><text x="419" y="173" text-anchor="middle" fill="#5d695f" font-size="10">observe · update · replan</text></svg></div>
         <div class="stage-copy" aria-live="polite" aria-atomic="true"><h4></h4><p></p></div>
         <div class="foot">Conceptual explanation only. This is not a hardware interface, live robot feed, or report of task success.</div>
       </section>`);

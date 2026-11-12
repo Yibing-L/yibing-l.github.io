@@ -246,3 +246,5 @@
   .publication-preview.with-thumb .publication-thumb,
   .publication-preview.with-thumb .publication-thumb img{width:72px;height:60px}
 }
+
+.project-name{text-transform:none}
