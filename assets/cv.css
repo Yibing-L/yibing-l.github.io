@@ -238,10 +238,19 @@
 
 .cv-page .cv-skills dl,
 .cv-page dl.cv-skills {
-  display: grid;
-  grid-template-columns: 170px minmax(0, 1fr);
-  gap: 15px 28px;
+  display: block;
   margin: 23px 0 0;
+}
+
+.cv-page .cv-skills dl > div,
+.cv-page dl.cv-skills > div {
+  width: 100%;
+  min-width: 0;
+}
+
+.cv-page .cv-skills dl > div + div,
+.cv-page dl.cv-skills > div + div {
+  margin-top: 18px;
 }
 
 .cv-page .cv-skills dt {
@@ -252,7 +261,7 @@
 }
 
 .cv-page .cv-skills dd {
-  margin: 0;
+  margin: 4px 0 0;
   min-width: 0;
   color: var(--muted);
   font-size: 14px;
@@ -308,11 +317,6 @@
     gap: 21px;
   }
 
-  .cv-page .cv-skills dl,
-  .cv-page dl.cv-skills {
-    grid-template-columns: 145px minmax(0, 1fr);
-    gap: 15px 23px;
-  }
 }
 
 @media (max-width: 840px) {
@@ -434,13 +438,7 @@
 
   .cv-page .cv-skills dl,
   .cv-page dl.cv-skills {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 5px;
     margin-top: 21px;
-  }
-
-  .cv-page .cv-skills dt:not(:first-child) {
-    margin-top: 13px;
   }
 
   .cv-page .cv-list {
@@ -579,9 +577,13 @@
 
   .cv-page .cv-skills dl,
   .cv-page dl.cv-skills {
-    grid-template-columns: 112pt minmax(0, 1fr);
-    gap: 6pt 15pt;
     margin-top: 10pt;
+  }
+
+  .cv-page .cv-skills dl > div,
+  .cv-page dl.cv-skills > div {
+    break-inside: avoid;
+    page-break-inside: avoid;
   }
 
   .cv-page .cv-skills dt {
