@@ -29,7 +29,7 @@ GitHub’s official instructions: https://docs.github.com/en/pages/getting-start
 - Appearance: `assets/style.css`; navigation, filtering, citation copy, photo dialog: `assets/main.js`.
 - Interactive conceptual demos: `assets/demos.js`.
 
-Publication labels distinguish under-review work, a poster and extended abstract, and an unpublished manuscript. The recorded video shows an individual prototype demonstration. The architecture explainer uses illustrative content. Neither presents a benchmark or user-study result.
+Publication labels distinguish under-review work and a poster and extended abstract. The recorded video shows an individual prototype demonstration. The architecture explainer uses illustrative content. Neither presents a benchmark or user-study result.
 
 The CV was exported from the revised November 11, 2026 Word CV. Review its contact details before public publication.
 
