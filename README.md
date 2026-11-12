@@ -24,7 +24,7 @@ GitHub’s official instructions: https://docs.github.com/en/pages/getting-start
 - Home and biography: `index.html`.
 - Case studies: `projects/homeplus/index.html`, `projects/wayfind/index.html`, `projects/long-term-design/index.html`.
 - Research outputs and citation text: `publications/index.html`; downloadable references: `assets/research-outputs.bib`.
-- CV: replace `assets/Yibing_Lu_CV.pdf` while keeping the filename.
+- Interactive CV: `cv/index.html`, `assets/cv.css`, and `assets/cv.js`. Word and PDF downloads: `assets/Yibing_Lu_CV.docx` and `assets/Yibing_Lu_CV.pdf`.
 - Photos and video: `assets/homeplus/`; gallery: `gallery/index.html`; demonstration: `demos/index.html`. Original supplied media remain unchanged outside this site.
 - Appearance: `assets/style.css`; navigation, filtering, citation copy, photo dialog: `assets/main.js`.
 - Interactive conceptual demos: `assets/demos.js`.
