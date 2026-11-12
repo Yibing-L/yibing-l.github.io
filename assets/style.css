@@ -273,50 +273,57 @@
 .homeplus-entry .project-art.retrospective-art img,
 .homeplus-entry .project-art img.retrospective-art{object-fit:contain}
 
-.wayfind-secondary{
-  display:grid;
-  grid-template-columns:120px minmax(0,1fr);
-  gap:24px;
-  align-items:center;
-  padding-top:8px;
+.academic-home .other-projects{margin-top:8px}
+.academic-home .other-projects-heading{
+  margin:0 0 17px;
+  font:400 24px/1.3 var(--serif);
+  letter-spacing:-.02em;
 }
-.wayfind-secondary>div{min-width:0}
-.wayfind-secondary>a:first-child,
-.wayfind-secondary .wayfind-thumb{
+.academic-home .wayfind-secondary{
+  display:grid;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-rows:168px auto;
+  width:min(100%,320px);
+  gap:0;
+  align-items:stretch;
+  border:1px solid var(--line);
+  padding:0;
+}
+.academic-home .wayfind-card-copy{
+  min-width:0;
+  padding:17px 18px 19px;
+}
+.academic-home .wayfind-secondary .wayfind-small-thumb{
   display:block;
-  width:120px;
-  height:84px;
+  width:100%;
+  min-height:0;
   overflow:hidden;
   background:var(--sage);
-  object-fit:contain;
+  border-bottom:1px solid var(--line);
 }
-.wayfind-secondary>img,
-.wayfind-secondary>a:first-child img,
-.wayfind-secondary .wayfind-thumb img{
+.academic-home .wayfind-secondary .wayfind-small-thumb img{
   display:block;
-  width:120px;
-  height:84px;
+  width:100%;
+  height:100%;
   object-fit:contain;
 }
-.wayfind-secondary .eyebrow{
+.academic-home .wayfind-secondary .eyebrow{
   margin:0 0 7px;
   font-size:9px;
   line-height:1.7;
   color:var(--muted);
 }
-.wayfind-secondary h3{
+.academic-home .wayfind-secondary h4{
   margin:0 0 8px;
   font:400 21px/1.35 var(--serif);
   letter-spacing:-.02em;
 }
-.wayfind-secondary p:not(.eyebrow){
-  max-width:760px;
+.academic-home .wayfind-secondary p:not(.eyebrow){
   margin:0;
   font-size:13px;
   line-height:1.8;
   color:var(--muted);
 }
-.wayfind-secondary .text-link{margin-top:9px;font-size:12px}
 
 .academic-home .academic-publications .publication-preview.with-thumb{
   grid-template-columns:112px minmax(0,1fr) 46px;
@@ -347,14 +354,7 @@
   .homeplus-group-heading h3{font-size:31px}
   .homeplus-group-heading p{font-size:13px}
   .homeplus-entry .project-copy h4{font-size:25px}
-  .wayfind-secondary{grid-template-columns:88px minmax(0,1fr);gap:17px}
-  .wayfind-secondary>a:first-child,
-  .wayfind-secondary .wayfind-thumb,
-  .wayfind-secondary>img,
-  .wayfind-secondary>a:first-child img,
-  .wayfind-secondary .wayfind-thumb img{width:88px;height:64px}
-  .wayfind-secondary h3{font-size:21px}
-  .wayfind-secondary p:not(.eyebrow){font-size:12px;line-height:1.75}
+  .academic-home .other-projects-heading{font-size:23px}
   .academic-home .academic-publications .publication-preview.with-thumb{
     grid-template-columns:72px minmax(0,1fr);
     gap:16px;
