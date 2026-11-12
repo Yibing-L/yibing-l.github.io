@@ -248,3 +248,10 @@
 }
 
 .project-name{text-transform:none}
+
+.academic-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:24px}
+.academic-heading>div{min-width:0}
+.academic-portrait{width:128px;height:128px;flex:none;object-fit:cover;object-position:center;border:1px solid var(--line);border-radius:2px}
+@media(max-width:1100px){.academic-portrait{width:112px;height:112px}}
+@media(max-width:600px){.academic-heading{gap:18px}.academic-portrait{width:84px;height:84px}}
+@media(max-width:360px){.academic-heading{gap:12px}.academic-portrait{width:60px;height:60px}}
